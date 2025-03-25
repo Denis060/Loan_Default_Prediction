@@ -12,7 +12,7 @@ How can lenders better identify risky borrowers before loan approval?
 ---
 
 ## Dataset Details
-- **Source:** [Kaggle – Loan Default Dataset]([https://www.kaggle.com/](https://www.kaggle.com/datasets/prakashraushan/loan-dataset)
+- **Source:** [Kaggle – Loan Default Dataset]([https://www.kaggle.com/](https://www.kaggle.com/datasets/prakashraushan/loan-dataset))
 - **Sample Size:** 32,586 rows  
 - **Each Row Represents:** A customer loan application  
 - **Time Period:** Not provided – assumed to be recent data  
