@@ -60,5 +60,5 @@ This deck summarizes the data and EDA insights for a non-technical audience.
 
 ## Author
 **Ibrahim Denis Fofanah**  
-📧 ifofanah@pace.edu  
+📧 if57774n@pace.edu  
 MS in Data Science, Seidenberg School of CSIS, Pace University
