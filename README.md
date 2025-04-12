@@ -1,62 +1,78 @@
-# Loan_Default_Prediction - first delivery (Data & EDA)
+# 🧠 Loan Default Prediction – Final Project
 
-## Project Overview
-Lending institutions face significant risk when customers default on loans.  
-This project aims to explore historical loan data to identify early risk signals and lay the foundation for a predictive model.
-
----
-
-## Business Problem
-How can lenders better identify risky borrowers before loan approval?
+## 📊 Project Overview
+This project explores historical loan data to identify risk factors that lead to loan default. It uses a logistic regression model to predict whether a customer will default or repay a loan based on multiple financial and personal features.
 
 ---
 
-## Dataset Details
-- **Source:** [Kaggle – Loan Default Dataset]([https://www.kaggle.com/](https://www.kaggle.com/datasets/prakashraushan/loan-dataset))
-- **Sample Size:** 32,586 rows  
-- **Each Row Represents:** A customer loan application  
-- **Time Period:** Not provided – assumed to be recent data  
-- **Target Variable:** `Current_loan_status` (1 = Default, 0 = No Default)
+## 🎯 Business Problem
+How can lenders better identify high-risk borrowers before issuing loans?
 
 ---
 
-## Data Preparation
-- Removed outliers (loan requests over $3.5M capped at 95th percentile)
-- Handled missing values using logical assumptions or median imputation
-- Cleaned currency symbols and mapped categorical values
+## 📁 Dataset Details
+- **Source**: [Kaggle – Loan Default Dataset](https://www.kaggle.com/)
+- **Sample Size**: 32,586 records
+- **Each Row Represents**: A single customer loan application
+- **Target Variable**: `Current_loan_status` (0 = No Default, 1 = Default)
 
 ---
 
-## Exploratory Data Analysis
-Five key visualizations were created to support risk analysis:
-
-1. **Loan Amount Distribution**  
-2. **Credit History vs Default**  
-3. **Loan Grade vs Default Rate**  
-4. *(Coming soon)* Income vs Default  
-5. *(Coming soon)* Loan Intent vs Default
+## 🧹 Data Preparation
+- Removed outliers (loan amounts over $3.5M capped at the 95th percentile)
+- Handled missing values via imputation
+- Encoded categorical features (loan_grade, home_ownership, loan_intent)
 
 ---
 
-## Key Takeaways
-- Most loans fall between $5K and $15K  
-- Lower loan grades (C, D, E) have much higher default rates  
-- Short credit history has limited but noticeable influence
+## 📊 Exploratory Data Analysis (EDA)
+Key visualizations included:
+1. Loan Amount Distribution
+2. Credit History vs Loan Default
+3. Loan Grade vs Default Rate
+4. Home Ownership vs Default Rate
+5. Loan Intent vs Default Rate
+
+Additional visuals provided in the appendix:
+- Loan Amount Distribution (Before Cleaning)
+- Employment Duration vs Loan Default
+- Confusion Matrix & Classification Report
 
 ---
 
-## First Deliverable Presentation
-📂 `/reports/Loan_Default_First_Deliverable`  
-This deck summarizes the data and EDA insights for a non-technical audience.
+## 🤖 Model Summary
+- **Model Type**: Logistic Regression
+- **Accuracy**: 79%
+- **Precision (Default)**: 68%
+- **Recall (Default)**: 4%
+
+### 💡 Key Findings
+- Income and loan grade were strong indicators of default risk
+- The model struggled with recall due to class imbalance
+
+### 📌 Recommendations
+- Apply stricter screening to high-risk loan grades (D, E)
+- Consider risk-based pricing for borrowers with low income or short employment duration
 
 ---
 
-## Next Steps
-- Feature engineering (e.g., income brackets, encoded categories)
-- Build predictive model (e.g., Logistic Regression)
-- Evaluate model performance and present business recommendations
+## 🧪 Technical Details
+- Features one-hot encoded
+- Model trained using sklearn's LogisticRegression (L2 penalty)
+- Evaluated with confusion matrix, classification report, F1 score
 
 ---
+
+## 📎 Deliverables
+- 📄 `Loan_Default_First_Delivery_FULL_FIXED.pptx`
+- 📄 `Loan_Default_Delivery_2_Complete.pptx`
+
+---
+
+## 🔗 GitHub Repo
+All project files including data notebooks, visualizations, and presentation decks are available in this repository.
+
+
 
 ## Author
 **Ibrahim Denis Fofanah**  
