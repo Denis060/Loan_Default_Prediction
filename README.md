@@ -1,16 +1,16 @@
-# 📌 Loan Default Prediction Project
+# Loan Default Prediction Project
 
 ---
 
-## 👤 Contacts:
+## Contacts:
 **Name**: Ibrahim Denis Fofanah  
-**Email**: ifofanah@pace.edu
+**Email**: if57774n@pace.edu
 
 **Status**: ✅ Complete
 
 ---
 
-## 📝 Project Description:
+## Project Description:
 This project aims to help lending institutions identify high-risk borrowers by predicting the likelihood of loan default using historical data. The project follows a full data science pipeline including data cleaning, EDA, feature engineering, model development, evaluation, and presentation.
 
 We use **Logistic Regression** to classify borrowers as likely to default (1) or repay (0) based on their financial and personal attributes.
@@ -38,16 +38,16 @@ We use **Logistic Regression** to classify borrowers as likely to default (1) or
 
 ---
 
-## 📈 Related Project Materials
+## Related Project Materials
 
-### 📄 Slide Decks:
-- 2025-03-25: [First Delivery – Data & EDA](reports/Loan_Default_First_Deliverable_FULL_FIXED.pptx)
-- 2025-04-01: [Second Delivery – Modeling, Findings, and Recommendations](reports/Loan_Default_Delivery_2_Complete.pptx)
-- 2025-04-22: [Final Delivery – Final Presentation](reports/Loan_Default_Delivery_2_Complete.pptx)
+### Slide Decks:
+- 2025-03-25: [First Delivery – Data & EDA](reports/Loan_Default_First_Deliverable.pdf)
+- 2025-04-01: [Second Delivery – Modeling, Findings, and Recommendations](reports/Loan_Default_Final_Deliverable.pdf)
+- 2025-04-22: [Final Delivery – Final Presentation](reports/Loan_Default_Final_Deliverable.pdf)
 
 ---
 
-## 🧪 Technical Overview
+##  Technical Overview
 
 - **Model**: Logistic Regression (scikit-learn)
 - **Target Variable**: `Current_loan_status` → recoded to `loan_default` (0 = no default, 1 = default)
@@ -61,7 +61,7 @@ We use **Logistic Regression** to classify borrowers as likely to default (1) or
 
 ---
 
-## 📊 Key Business Insights
+## Key Business Insights
 
 - **High income** and **long credit history** reduce default risk
 - **Loan grades D & E**, **high loan amounts**, and **medical debt** are associated with higher default
@@ -69,7 +69,7 @@ We use **Logistic Regression** to classify borrowers as likely to default (1) or
 
 ---
 
-## 📎 Final Thoughts
+## Final Thoughts
 
-This project was submitted as part of the Practical Data Science course at Pace University. All code, reports, and outputs are maintained in this repository for future reference.
+This project was submitted as part of the Spring 2025 Practical Data Science course at Pace University. All code, reports, and outputs are maintained in this repository for future reference.
 
