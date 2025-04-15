@@ -1,79 +1,75 @@
-#  Loan Default Prediction – Final Project
-
-## Project Overview
-This project explores historical loan data to identify risk factors that lead to loan default. It uses a logistic regression model to predict whether a customer will default or repay a loan based on multiple financial and personal features.
+# 📌 Loan Default Prediction Project
 
 ---
 
-## Business Problem
-How can lenders better identify high-risk borrowers before issuing loans?
----
+## 👤 Contacts:
+**Name**: Ibrahim Denis Fofanah  
+**Email**: ifofanah@pace.edu
 
-## 📁 Dataset Details
-- **Source**: [Kaggle – Loan Default Dataset](https://www.kaggle.com/datasets/nikhil1e9/loan-default)
-- **Sample Size**: 32,586 records
-- **Each Row Represents**: A single customer loan application
-- **Target Variable**: `Current_loan_status` (0 = No Default, 1 = Default)
+**Status**: ✅ Complete
 
 ---
 
-## Data Preparation
-- Removed outliers (loan amounts over $3.5M capped at the 95th percentile)
-- Handled missing values via imputation
-- Encoded categorical features (loan_grade, home_ownership, loan_intent)
+## 📝 Project Description:
+This project aims to help lending institutions identify high-risk borrowers by predicting the likelihood of loan default using historical data. The project follows a full data science pipeline including data cleaning, EDA, feature engineering, model development, evaluation, and presentation.
+
+We use **Logistic Regression** to classify borrowers as likely to default (1) or repay (0) based on their financial and personal attributes.
 
 ---
 
-## Exploratory Data Analysis (EDA)
-Key visualizations included:
-1. Loan Amount Distribution
-2. Credit History vs Loan Default
-3. Loan Grade vs Default Rate
-4. Home Ownership vs Default Rate
-5. Loan Intent vs Default Rate
+## 🗂 Navigating this Repo:
 
-Additional visuals provided in the appendix:
-- Loan Amount Distribution (Before Cleaning)
-- Employment Duration vs Loan Default
-- Confusion Matrix & Classification Report
+- `data/`
+  - `raw/`: Contains the original dataset (not pushed to GitHub)
+  - `processed/`: Cleaned and feature-engineered datasets
 
----
+- `notebooks/`
+  - `01_data_cleaning.ipynb`: Initial cleaning and outlier treatment
+  - `02_eda_analysis.ipynb`: Exploratory Data Analysis (EDA)
+  - `03_feature_engineering.ipynb`: Encoding and prep for modeling
+  - `04_model_training.ipynb`: Logistic Regression training & evaluation
 
-## Model Summary
-- **Model Type**: Logistic Regression
-- **Accuracy**: 79%
-- **Precision (Default)**: 68%
-- **Recall (Default)**: 4%
+- `reports/`
+  - `Loan_Default_First_Deliverable.pdf`
+  - `Loan_Default_Final_Deliverable.pdf`
 
-### Key Findings
-- Income and loan grade were strong indicators of default risk
-- The model struggled with recall due to class imbalance
-
-### Recommendations
-- Apply stricter screening to high-risk loan grades (D, E)
-- Consider risk-based pricing for borrowers with low income or short employment duration
+- `README.md`: This file  
+- `requirements.txt`: Python packages required to run the project
 
 ---
 
-## Technical Details
-- Features one-hot encoded
-- Model trained using sklearn's LogisticRegression (L2 penalty)
-- Evaluated with confusion matrix, classification report, F1 score
+## 📈 Related Project Materials
+
+### 📄 Slide Decks:
+- 2025-03-25: [First Delivery – Data & EDA](reports/Loan_Default_First_Deliverable_FULL_FIXED.pptx)
+- 2025-04-01: [Second Delivery – Modeling, Findings, and Recommendations](reports/Loan_Default_Delivery_2_Complete.pptx)
+- 2025-04-22: [Final Delivery – Final Presentation](reports/Loan_Default_Delivery_2_Complete.pptx)
 
 ---
 
-## Deliverables
-- 📄 `Loan_Default_First_Delivery_FULL_FIXED.pptx`
-- 📄 `Loan_Default_Delivery_2_Complete.pptx`
+## 🧪 Technical Overview
+
+- **Model**: Logistic Regression (scikit-learn)
+- **Target Variable**: `Current_loan_status` → recoded to `loan_default` (0 = no default, 1 = default)
+- **Features Used**:
+  - Loan amount, interest rate, income, loan intent, credit history, employment duration, home ownership, and loan grade (encoded)
+- **Evaluation**:
+  - Accuracy: 79%
+  - Precision (Default class): 68%
+  - Recall (Default class): 4%
+  - Confusion Matrix, F1 Score, Classification Report
 
 ---
 
-## GitHub Repo
-All project files including data notebooks, visualizations, and presentation decks are available in this repository.
+## 📊 Key Business Insights
 
+- **High income** and **long credit history** reduce default risk
+- **Loan grades D & E**, **high loan amounts**, and **medical debt** are associated with higher default
+- Business can use these findings to make smarter approval and pricing decisions
 
+---
 
-## Author
-**Ibrahim Denis Fofanah**  
-if57774n@pace.edu  
-MS in Data Science, Seidenberg School of CSIS, Pace University
+## 📎 Final Thoughts
+
+This project was submitted as part of the Practical Data Science course at Pace University. All code, reports, and outputs are maintained in this repository for future reference.
+
