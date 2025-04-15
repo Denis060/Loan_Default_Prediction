@@ -33,17 +33,15 @@ We use **Logistic Regression** to classify borrowers as likely to default (1) or
   - `Loan_Default_First_Deliverable.pdf`
   - `Loan_Default_Final_Deliverable.pdf`
 
-- `README.md`: This file  
+
 - `requirements.txt`: Python packages required to run the project
 
 ---
 
 ## Related Project Materials
 
-### Slide Decks:
-- 2025-03-25: [First Delivery – Data & EDA](reports/Loan_Default_First_Deliverable.pdf)
-- 2025-04-01: [Second Delivery – Modeling, Findings, and Recommendations](reports/Loan_Default_Final_Deliverable.pdf)
-- 2025-04-22: [Final Delivery – Final Presentation](reports/Loan_Default_Final_Deliverable.pdf)
+### Slide Deck:
+- 2025-04-22: [Final Delivery – Final Presentation for non-technical stakeholders](reports/Loan_Default_Final_Deliverable.pdf)
 
 ---
 
@@ -69,7 +67,7 @@ We use **Logistic Regression** to classify borrowers as likely to default (1) or
 
 ---
 
-## Final Thoughts
+## Project Context
 
 This project was submitted as part of the Spring 2025 Practical Data Science course at Pace University. All code, reports, and outputs are maintained in this repository for future reference.
 
