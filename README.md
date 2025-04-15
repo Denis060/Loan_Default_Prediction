@@ -17,7 +17,7 @@ We use **Logistic Regression** to classify borrowers as likely to default (1) or
 
 ---
 
-## 🗂 Navigating this Repo:
+## Navigating this Repo:
 
 - `data/`
   - `raw/`: Contains the original dataset (not pushed to GitHub)
