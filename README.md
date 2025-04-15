@@ -10,7 +10,7 @@ How can lenders better identify high-risk borrowers before issuing loans?
 ---
 
 ## Dataset Details
-- **Source**: [Kaggle – Loan Default Dataset](https://www.kaggle.com/)
+- **Source**: [Kaggle – Loan Default Dataset]([https://www.kaggle.com/](https://www.kaggle.com/datasets/nikhil1e9/loan-default))
 - **Sample Size**: 32,586 records
 - **Each Row Represents**: A single customer loan application
 - **Target Variable**: `Current_loan_status` (0 = No Default, 1 = Default)
